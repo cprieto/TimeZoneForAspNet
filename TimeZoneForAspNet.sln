@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtcInfo", "TimeZoneForAspNet\UtcInfo.csproj", "{6C60E927-F538-4F74-B12B-00316421D0AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csproj", "{E8E33513-A1B7-4674-B63D-25AFA7FBCBDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C60E927-F538-4F74-B12B-00316421D0AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C60E927-F538-4F74-B12B-00316421D0AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C60E927-F538-4F74-B12B-00316421D0AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C60E927-F538-4F74-B12B-00316421D0AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8E33513-A1B7-4674-B63D-25AFA7FBCBDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8E33513-A1B7-4674-B63D-25AFA7FBCBDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8E33513-A1B7-4674-B63D-25AFA7FBCBDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8E33513-A1B7-4674-B63D-25AFA7FBCBDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

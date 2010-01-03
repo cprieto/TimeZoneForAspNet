@@ -1,0 +1,5 @@
+*resharper.user
+[Dd]ebug/
+[Rr]elease/
+*.suo
+_ReSharper.*/

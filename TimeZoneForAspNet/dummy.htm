@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title></title>
+    <script language="javascript" type="text/javascript">
+        function setCookie(cookieName, cookieValue, expiredays) {
+            var exdate = new Date();
+            exdate.setDate(exdate.getDate() + expiredays);
+            document.cookie = cookieName + "=" + escape(cookieValue) + ((expiredays == null) ? "" : ";expires=" + exdate.toUTCString());
+        }
+        
+        function getCookie(cookieName) {
+            if (document.cookie.length > 0) {
+                cookieStart = document.cookie.indexOf(cookieName + "=");
+                if (cookieStart != -1) {
+                    cookieStart = cookieStart + cookieName.length + 1;
+                    cookieEnd = document.cookie.indexOf(";", cookieStart);
+                    if (cookieEnd == -1) cookieEnd = document.cookie.length;
+                    return unescape(document.cookie.substring(cookieStart, cookieEnd));
+                }
+            }
+            return "";
+        }
+        
+        function getUtcOffset() {
+            return (new Date()).getTimezoneOffset();
+        }
+
+        function checkCookie() {
+            var timeOffset = getCookie("TimeZoneOffset");
+            if (timeOffset == null || timeOffset == "") {
+                setCookie("TimeZoneOffset", getUtcOffset(), 1);
+                window.location.reload();
+            }
+        }
+    </script>
+</head>
+<body onload="checkCookie();">
+</body>
+</html>
